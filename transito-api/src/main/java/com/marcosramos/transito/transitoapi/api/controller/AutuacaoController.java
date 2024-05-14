@@ -23,6 +23,7 @@ public class AutuacaoController implements AutuacaoControllerOpenApi {
     private final CadastroAutuacaoService cadastroAutuacaoService;
     private final AutuacaoAssembler autuacaoAssembler;
     private final CadastroVeiculoService cadastroVeiculoService;
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public AutuacaoModel registrar(@PathVariable Long veiculoId, @Valid @RequestBody AutuacaoInputModel autuacaoInputModel){

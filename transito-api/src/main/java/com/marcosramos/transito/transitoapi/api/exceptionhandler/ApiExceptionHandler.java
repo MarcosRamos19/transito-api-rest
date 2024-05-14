@@ -2,14 +2,12 @@ package com.marcosramos.transito.transitoapi.api.exceptionhandler;
 
 import com.marcosramos.transito.transitoapi.domain.exception.DomainException;
 import com.marcosramos.transito.transitoapi.domain.exception.EntidadeNaoEncontradaException;
-import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.*;
 import org.springframework.validation.FieldError;
-import org.springframework.validation.method.MethodValidationException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

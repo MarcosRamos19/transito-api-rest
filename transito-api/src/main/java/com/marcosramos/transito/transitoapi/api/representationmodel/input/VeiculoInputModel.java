@@ -29,7 +29,6 @@ public class VeiculoInputModel {
     @Pattern(regexp = "[A-Z]{3}[0-9][0-9A-Z][0-9]{2}") //validação formato de placas antigas e novas
     private String placa;
 
-
     @Valid
     @NotNull
     private ProprietarioIdInput proprietario;

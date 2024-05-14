@@ -1,7 +1,5 @@
 package com.marcosramos.transito.transitoapi.domain.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.marcosramos.transito.transitoapi.domain.exception.DomainException;
 import com.marcosramos.transito.transitoapi.domain.validation.ValidationGroups;
 import jakarta.persistence.*;

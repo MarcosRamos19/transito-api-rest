@@ -15,13 +15,16 @@ import java.util.List;
 
 @Tag(name = "Veículos", description = "Gerencia veículos")
 public interface VeiculoControllerOpenApi {
+
     @Operation(summary = "Lista os véiculos")
     public List<VeiculoModel> listar();
+
     @Operation(summary = "Busca um veículo por Id", responses = {
             @ApiResponse(responseCode = "200"),
             @ApiResponse(responseCode = "400", description = "Id de veículo inválido", content = @Content(schema = @Schema))
     })
     public ResponseEntity<VeiculoModel> buscar(@Parameter(description = "Id de um veículo", example = "1", required = true) Long veiculoId);
+
     @Operation(summary = "Cadastra um novo veículo", responses = {
             @ApiResponse(responseCode = "400", description = "Representação de veículo inválida", content = @Content(schema = @Schema))
     })

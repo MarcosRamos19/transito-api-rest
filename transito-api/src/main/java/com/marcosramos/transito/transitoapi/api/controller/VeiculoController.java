@@ -36,8 +36,8 @@ public class VeiculoController implements VeiculoControllerOpenApi {
                 .map(veiculoAssembler::toModel)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
-
     }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public VeiculoModel cadastrar(@Valid @RequestBody VeiculoInputModel veiculoInput){
@@ -45,7 +45,5 @@ public class VeiculoController implements VeiculoControllerOpenApi {
         Veiculo veiculoCadastrado = cadastroVeiculoService.cadastrar(novoVeiculo);
 
         return veiculoAssembler.toModel(veiculoCadastrado);
-
     }
-
 }

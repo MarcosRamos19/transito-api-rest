@@ -36,6 +36,7 @@ public interface ProprietarioControllerOpenApi {
     })
     public ResponseEntity<ProprietarioModel> atualizar (@Parameter(description = "Id de um proprietário", example = "1", required = true)Long proprietarioId,
                                                         @RequestBody(description = "Representação de um proprietário com dados para atualizar", required = true)ProprietarioInputModel proprietarioInputModel);
+
     @Operation(summary = "Remove um proprietário", responses = {
             @ApiResponse(responseCode = "200"),
             @ApiResponse(responseCode = "400", description = "Id de propreitário inválido", content = @Content(schema = @Schema))

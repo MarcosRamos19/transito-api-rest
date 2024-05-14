@@ -1,6 +1,5 @@
 package com.marcosramos.transito.transitoapi.domain.service;
 
-import com.marcosramos.transito.transitoapi.domain.model.StatusVeiculo;
 import com.marcosramos.transito.transitoapi.domain.model.Veiculo;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
